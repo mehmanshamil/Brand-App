@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container  d-flex align-items-center srcHeader justify-content-around">
+            <div class="logo">
+                <img src="./assets/logo/logo-colored.jpg" alt="logo">
+            </div>
+            <div class="search d-flex gap-4">
+                <div class="selects d-flex align-items-center ">
+                    <input class="p-2" id="inp" type="text" placeholder="Search">
+                    <select class="options">
+                        <option value="All Category">All Category</option>
+                        <option value="Clothes and wear">Clothes and wear</option>
+                        <option value="Home interiors">Home interiors</option>
+                        <option value="Computer and tech">Computer and tech</option>
+                        <option value="Sports and outdoor">Sports and outdoor</option>
+                        <option value="More category">More category</option>
+                        <option value="More">More...</option>
+                    </select>
+                    <div class="src">
+                        <button class="p-3 d-flex align-items-center" id="srcBtn">Search</button>
+                    </div>
+                </div>
+                <div class="more-info d-flex gap-3 align-items-center m-1 mt-3 opacity-50">
+                    <div class="user text-center">
+                        <a class="text-more" href="#">
+                            <i class="iconMoreDetail fa-solid fa-user"></i>
+                            <p>User</p>
+                        </a>
+                    </div>
+                    <div class="comment text-center">
+                        <a class="text-more" href="#">
+                            <i class="iconMoreDetail fa-solid fa-comment-dots"></i>
+                            <p>Comment</p>
+                        </a>
+                    </div>
+                    <div class="orders text-center">
+                        <a class="text-more" href="./assets/pages/favoritePage.html">
+                            <i class="iconMoreDetail fa-solid fa-heart"></i>
+                            <p>Orders</p>
+                        </a>
+                    </div>
+                    <div class="my-cart text-center">
+                        <a class="text-more" href="./assets/pages/wishList.html">
+                            <i class="iconMoreDetail fa-solid fa-cart-shopping"></i>
+                            <p>My Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="Category">
+            <div class="head-cat w-100 bg-white p-3">
+                <div class="container">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="head-menu d-flex justify-content-between align-items-center">
+                            <nav class="allCategory d-flex gap-3">
+                                <ul class="min-menu d-flex gap-3">
+                                    <li>
+                                        <i class="fa-solid fa-bars mt-1"></i>
+                                        <a href="#" class="text-dark">All Category</a>
+                                    </li>
+                                    <li><a href="#" class="text-dark">Hot offers</a></li>
+                                    <li><a href="#" class="text-dark">Gift boxes</a></li>
+                                    <li><a href="#" class="text-dark">Projects</a></li>
+                                    <li><a href="#" class="text-dark">Menu item</a></li>
+                                    <li>
+                                        <select id="help">
+                                            <option value="Help">Help</option>
+                                            <option value="Support">Support</option>
+                                            <option value="Community">Community</option>
+                                        </select>
+                                    </li>
+                                    <li id="resultSrc" class="h3"></li>
+                                </ul>
+
+                            </nav>
+                            <div class="language d-flex gap-3 align-items-center">
+                                <select id="language">
+                                    <option value="English,USD">English,USD</option>
+                                    <option value="English,USD">Azerbaijan</option>
+                                    <option value="English,USD">Turkish</option>
+                                </select>
+                                <div id="flag" class="d-flex gap-2 align-items-center">
+                                    <p>Ship to </p>
+                                    <img class="img-logo " src="./assets/logo/Ekran görüntüsü 2023-11-18 104702.png"
+                                        alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="detail-category d-flex justify-content-center">
+                    <div class="category-name d-flex justify-content-around bg-white p-3">
+                        <nav>
+                            <ul class="d-flex flex-column menu-cat-list">
+                                <li class="menuList active-list"><a href="#" class="text-dark">Automobiles</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">Clothes and wear</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">Home interiors</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">Computer and tech</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">Tools,equipments</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">Sports and outdoor</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">Animal and pets</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">Machinery tools</a></li>
+                                <li class="menuList"><a href="#" class="text-dark">More category</a></li>
+                            </ul>
+                        </nav>
+                        <div class="latest-trend">
+                            <img class="img-headphone" src="./assets/Gallery/Banner-board-800x420 2.png" alt="">
+                            <div class="text-electronic d-flex flex-column gap-2">
+                                <span class="latest">Latest trending</span>
+                                <p class="elect h1">Electronic items</p>
+                                <button id="btn-learn" class="p-2 w-50">Learn more</button>
+                            </div>
+                        </div>
+                        <div class="more-product-info d-flex flex-column gap-2">
+                            <div class="user-get">
+                                <div class="icon-user d-flex flex-column gap-3 p-2">
+                                    <div class="img-user-head d-flex gap-2">
+                                        <img src="./assets/logo/Avatar.png" alt="">
+                                        <div class="user-txt-con">
+                                            <p>Hi, user</p>
+                                            <p>let's get stated</p>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-user d-flex flex-column gap-2 align-items-center">
+                                        <button class="joinBtn p-1">join now</button>
+                                        <button class="logBTn p-1">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="getUS p-3">
+                                <p>Get US $10 off</p>
+                                <p>width a new</p>
+                                <p>supplier</p>
+                            </div>
+                            <div class="send-quotes p-3">
+                                <p>Send quotes width</p>
+                                <p>supplier</p>
+                                <p>preferences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="dealsoffer">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" bg-white p-3 deals-offer-container d-flex">
+                    <div class="date d-flex flex-column gap-3 ">
+                        <div class="deals-content">
+                            <p class="date-txt dealsHeadContent"> Deals and offers</p>
+                            <p class="date-txt opacity-50">Hygine equipments</p>
+                        </div>
+                        <div class="time d-flex gap-2">
+                            <p class="d-flex flex-column text-center">
+                                <span id="day">04</span>
+                                <span>Day</span>
+                            </p>
+                            <p class="d-flex flex-column text-center">
+                                <span id="hour">13</span>
+                                <span>Hour</span>
+                            </p>
+                            <p class="d-flex flex-column text-center">
+                                <span id="min">34</span>
+                                <span>Min</span>
+                            </p>
+                            <p class="d-flex flex-column text-center">
+                                <span id="sec">56</span>
+                                <span>Sec</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product-accesuar d-flex justify-content-around  w-100">
+                        <div class="product-acc text-center">
+                            <div class="img">
+                                <img src="./assets/Gallery/pro1.png" alt="">
+                            </div>
+                            <p>Smart watches</p>
+                            <span class="discount"> -25%</span>
+                        </div>
+                        <div class="product-acc text-center">
+                            <div class="img">
+                                <img src="./assets/Gallery/product2.png" alt="">
+                            </div>
+                            <p>Laptops</p>
+                            <span class="discount"> -15%</span>
+                        </div>
+                        <div class="product-acc text-center">
+                            <div class="img">
+                                <img src="./assets/Gallery/product3.png" alt="">
+                            </div>
+                            <p>GoPro cameras</p>
+                            <span class="discount"> -40%</span>
+                        </div>
+                        <div class="product-acc text-center">
+                            <div class="img">
+                                <img src="./assets/Gallery/product4.png" alt="">
+                            </div>
+                            <p>Headphones</p>
+                            <span class="discount"> -25%</span>
+                        </div>
+                        <div class="product-accc  text-center">
+                            <div class="img">
+                                <img src="./assets/Gallery/product5.png" alt="">
+                            </div>
+                            <p>SmartPhone</p>
+                            <span class="discount"> -25%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Home-outdoor">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" bg-white deals-offer-container d-flex">
+                    <div class="homeAuditor">
+                        <img class="homeAuditor" src="./assets/Gallery/chair-home92.png" alt="">
+                        <p class="hometxt">Home and </p>
+                        <p class="hometxttwo">outdoor</p>
+                        <button class="SourceNow">Source Now</button>
+                    </div>
+                    <div class="boxs d-flex flex-wrap">
+                        <div class="box">
+                            <p>Soft chairs</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 19</p>
+                            <img class="chrImg" src="./assets/Gallery/chair1.png" alt="">
+                        </div>
+
+                        <div class="box">
+                            <p>Soft chairs</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 19</p>
+                            <img class="chrImg" src="./assets/Gallery/chair2.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Smart watches</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 19</p>
+                            <img class="chrImg" src="./assets/Gallery/chair3.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Kitchen mixer</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 19</p>
+                            <img class="chrImg" src="./assets/Gallery/chair4.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Blenders</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 100</p>
+                            <img class="chrImg" src="./assets/Gallery/chair5.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Home appliance</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 39</p>
+                            <img class="chrImg" src="./assets/Gallery/chair6.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Coffee maker</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 19</p>
+                            <img class="chrImg" src="./assets/Gallery/chair7.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Soft chairs</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 10</p>
+                            <img class="chrImg" src="./assets/Gallery/chair8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" bg-white deals-offer-container d-flex">
+                    <div class="homeAuditor">
+                        <img class="homeAuditor" src="./assets/Gallery/home2.png" alt="">
+                        <p class="hometxt">Consumer</p>
+                        <p class="hometxttwo">electronics and</p>
+                        <p class="hometxthree">gadgets</p>
+                        <button id="srcnw" class="SourceNow ">Source Now</button>
+                    </div>
+                    <div class="boxs d-flex flex-wrap">
+                        <div class="box">
+                            <p>Smart watches</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 19</p>
+                            <img class="chrImg" src="./assets/Gallery/acc18.png" alt="">
+                        </div>
+
+                        <div class="box">
+                            <p>Cameras</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 89</p>
+                            <img class="chrImg" src="./assets/Gallery/acc2.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Smart watches</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 10</p>
+                            <img class="chrImg" src="./assets/Gallery/acc39.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Smart watches</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 90</p>
+                            <img class="chrImg" src="./assets/Gallery/ac4410.png">
+                        </div>
+                        <div class="box">
+                            <p>Gaming set</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 35</p>
+                            <img class="chrImg" src="./assets/Gallery/acc55.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Laptops & PC</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 340</p>
+                            <img class="chrImg" src="./assets/Gallery/acc6.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Smartphones</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 19</p>
+                            <img class="chrImg" src="./assets/Gallery/ac772.png" alt="">
+                        </div>
+                        <div class="box">
+                            <p>Electric kattle</p>
+                            <span class="opacity-50">From</span>
+                            <p class="opacity-50">USD 240</p>
+                            <img class="chrImg" src="./assets/Gallery/acc7image 33.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sendsuplier">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex">
+                    <div id="forms" class="d-flex justify-content-between">
+                        <div class="content-forms">
+                            <p class="txt-head-form">
+                                An easy way to send
+                            </p>
+                            <p class="txt-head-form">
+                                requests to all suppliers
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt. </p>
+                        </div>
+                        <div id="form">
+                            <form action="#" class="d-flex flex-column gap-3">
+                                <p class="formSend">Send quote to suppliers</p>
+                                <input class="my-2" type="text" value="What item you need?">
+                                <textarea class="w-100" placeholder="Type more details"></textarea>
+                                <div class="inputs">
+                                    <input class="w-50" type="text" value="Quantity">
+                                    <select class="slct" name="" id="">
+                                        <option value="#">Pcs</option>
+                                        <option value="#">Scp</option>
+                                        <option value="#">Cps</option>
+                                    </select>
+                                </div>
+                                <button class="w-25" id="send">Send inquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recommend">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <p class="recom-txt">Recommended items</p>
+                    <div id="produtc"></div>
+                    <div class="d-flex justify-content-end">
+                        <button class="my-4" id="lmBtn">
+                            <i class="arrowIcon fa-solid fa-arrow-up"></i>
+                            Load more...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="extraCervice">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <p class="recom-txt">Our extra services</p>
+                    <div class="d-flex justify-content-around">
+                        <div class="extra-service">
+                            <div class="extra-img">
+                                <img class="extra-img" src="./assets/Gallery/extra/extra1group.png" alt="">
+                            </div>
+                            <div class="extra-sec-cont p-3">
+                                <p class="m-2">Source from</p>
+                                <p class="m-2"> Industry Hubs</p>
+                            </div>
+                            <i class="srciconextra fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="extra-service">
+                            <div class="extra-img">
+                                <img class="extra-img" src="./assets/Gallery/extra/extra2group.png" alt="">
+                            </div>
+                            <div class="extra-sec-cont p-3">
+                                <p class="m-2">Customize Your </p>
+                                <p class="m-2"> Products</p>
+                            </div>
+                            <i class="srciconextra fa-solid fa-box-archive"></i>
+                        </div>
+                        <div class="extra-service">
+                            <div class="extra-img">
+                                <img class="extra-img" src="./assets/Gallery/extra/extra3Mask group.png" alt="">
+                            </div>
+                            <div class="extra-sec-cont p-3">
+                                <p class="m-2">Fast, reliable shipping</p>
+                                <p class="m-2"> by ocean or air</p>
+                            </div>
+                            <i class="srciconextra fa-solid fa-paper-plane"></i>
+                        </div>
+                        <div class="extra-service">
+                            <div class="extra-img">
+                                <img class="extra-img" src="./assets/Gallery/extra/extra4Mask group.png" alt="">
+                            </div>
+                            <div class="extra-sec-cont p-3">
+                                <p class="m-2">Product monitoring </p>
+                                <p class="m-2"> and inspection</p>
+                            </div>
+                            <i class="srciconextra fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="flagsSupport">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <p class="recom-txt"> Suppliers by region</p>
+                    <div class="d-flex flex-wrap">
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f1.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>Arabic Emirates</span>
+                                    <span class="opacity-50 flg-txt">shopname.ae</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f2.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>Australia</span>
+                                    <span class="opacity-50 flg-txt">shopname.ae</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f3.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>United States</span>
+                                    <span class="opacity-50 flg-txt">shopname.ae</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f4.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>Russia</span>
+                                    <span class="opacity-50 flg-txt">shopname.ru</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f5.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>Italy</span>
+                                    <span class="opacity-50 flg-txt">shopname.it</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f6.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>Denmark</span>
+                                    <span class="opacity-50 flg-txt">denmark.com.dk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f7.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>France</span>
+                                    <span class="opacity-50 flg-txt">shopname.com.fr</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f8.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>Arabic Emirates</span>
+                                    <span class="opacity-50 flg-txt">shopname.ae</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f9.icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>China</span>
+                                    <span class="opacity-50 flg-txt">shopname.ae</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <div class="imgCountry d-flex  align-items-center gap-2">
+                                <div class="imgCountry pt-2">
+                                    <img class="imgCountry" src="./assets/logo/flags/f10icon.png" alt="flag">
+                                </div>
+                                <div class="flgcontent d-flex flex-column">
+                                    <span>Great Britain</span>
+                                    <span class="opacity-50 flg-txt">shopname.co.uk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subscribe">
+            <div class=" subscribe-head d-flex justify-content-center flex-column align-items-center gap-5">
+                <div class="subscribe-txt w-50 h-25">
+                    <p class="subsTxt text-center">Subscribe on our newsletter</p>
+                    <p class="opacity-50 text-center">Get daily news on upcoming offers from many suppliers all over the
+                        world</p>
+                </div>
+                <form action="#" class="d-flex gap-2">
+                    <div class="inpmail">
+                        <input id="inpemail" type="email" placeholder="Email">
+                        <i class="emailicon fa-regular fa-envelope"></i>
+                    </div>
+                    <button id="subsBtn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white p-3">
+        <div class="container justify-content-center d-flex my-5">
+            <div class=" deals-offer-container d-flex justify-content-around">
+                <div class="logo-content w-25 d-flex flex-column">
+                    <div class="logo">
+                        <img src="./assets/logo/logo-colored.jpg" alt="logo">
+                    </div>
+                    <p>Best information about the company gies here but now lorem ipsum is</p>
+                    <div class="icons-share d-flex gap-3">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="iyt fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">About</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">About Us</a></li>
+                            <li><a class="footMenu" href="#">Find store</a></li>
+                            <li><a class="footMenu" href="#">Categories</a></li>
+                            <li><a class="footMenu" href="#">Blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">Partnership</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">About Us</a></li>
+                            <li><a class="footMenu" href="#">Find store</a></li>
+                            <li><a class="footMenu" href="#">Categories</a></li>
+                            <li><a class="footMenu" href="#">Blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">Information</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">Help Center</a></li>
+                            <li><a class="footMenu" href="#">Money Refund</a></li>
+                            <li><a class="footMenu" href="#">Shipping</a></li>
+                            <li><a class="footMenu" href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">For users</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">Login </a></li>
+                            <li><a class="footMenu" href="#">Register</a></li>
+                            <li><a class="footMenu" href="#">Settings</a></li>
+                            <li><a class="footMenu" href="#">My Orders</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="getApp d-flex flex-column justify-content-center align-items-center gap-2">
+                    <p class="fm-head">Get app</p>
+                    <div class="app-logo d-flex flex-column gap-2">
+                        <img src="./assets/logo/app/Group.png" alt="">
+                        <img src="./assets/logo/app/market-button.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end d-flex justify-content-center align-items-center">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <div class="language-vers d-flex justify-content-between">
+                        <p>© 2023 Ecommerce. </p>
+                        <div class="flagiconSymbol">
+                            <img src="./assets/logo/flags/f3.icon.png" alt="">
+                            <select id="flgs" name="flags">
+                                <option>English</option>
+                                <option>Azerbaijan</option>
+                                <option>Turkish</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/srchome.css">
+</head>
+
+<body>
+    <header>
+        <div class="container  d-flex align-items-center srcHeader justify-content-around">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../logo/logo-colored.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="search d-flex gap-4">
+                <div class="selects d-flex align-items-center ">
+                    <input class="p-2" id="inp" type="text" placeholder="Search">
+                    <select class="options">
+                        <option value="All Category">All Category</option>
+                        <option value="More">More...</option>
+                    </select>
+                    <div class="src">
+                        <button class="p-3 d-flex align-items-center" id="srcBtn">Search</button>
+                    </div>
+                </div>
+                <div class="more-info d-flex gap-3 align-items-center m-1 mt-3 opacity-50">
+                    <div class="user text-center">
+                        <a class="text-more" href="#">
+                            <i class="iconMoreDetail fa-solid fa-user"></i>
+                            <p>User</p>
+                        </a>
+                    </div>
+                    <div class="comment text-center">
+                        <a class="text-more" href="#">
+                            <i class="iconMoreDetail fa-solid fa-comment-dots"></i>
+                            <p>Comment</p>
+                        </a>
+                    </div>
+                    <div class="orders text-center">
+                        <a class="text-more" href="./favoritePage.html">
+                            <i class="iconMoreDetail fa-solid fa-heart"></i>
+                            <p>Orders</p>
+                        </a>
+                    </div>
+                    <div class="my-cart text-center">
+                        <a class="text-more" href="../pages/wishList.html">
+                            <i class="iconMoreDetail fa-solid fa-cart-shopping"></i>
+                            <p>My Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="Category">
+            <div class="head-cat w-100 bg-white p-3">
+                <div class="container">
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="head-menu d-flex justify-content-between align-items-center">
+                            <nav class="allCategory d-flex gap-3">
+                                <ul class="min-menu d-flex gap-3">
+                                    <li>
+                                        <i class="fa-solid fa-bars mt-1"></i>
+                                        <a href="#" class="text-dark">All Category</a>
+                                    </li>
+                                    <li><a href="#" class="text-dark">Hot offers</a></li>
+                                    <li><a href="#" class="text-dark">Gift boxes</a></li>
+                                    <li><a href="#" class="text-dark">Projects</a></li>
+                                    <li><a href="#" class="text-dark">Menu item</a></li>
+                                    <li>
+                                        <select id="help">
+                                            <option value="Help">Help</option>
+                                            <option value="Support">Support</option>
+                                            <option value="Community">Community</option>
+                                        </select>
+                                    </li>
+                                    <li id="resultSrc" class="h3"></li>
+                                </ul>
+
+                            </nav>
+                            <div class="language d-flex gap-3 align-items-center">
+                                <select id="language">
+                                    <option value="English,USD">English,USD</option>
+                                    <option value="English,USD">Azerbaijan</option>
+                                    <option value="English,USD">Turkish</option>
+                                </select>
+                                <div id="flag" class="d-flex gap-2 align-items-center">
+                                    <p>Ship to </p>
+                                    <img class="img-logo " src="../logo/Ekran görüntüsü 2023-11-18 104702.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main-product">
+            <div class="container justify-content-center d-flex my-1">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <div class="d-flex justify-content-start p-2">
+                        <div class="src-view-dt w-75 d-flex justify-content-between align-items-center p-2">
+                            <p class="opacity-50 ">
+                                <a class="text-dark opacity-50" href="../../index.html">Home ></a>
+                                <a class="text-dark opacity-50" href="#">Clothings ></a>
+                                <a class="text-dark opacity-50" href="#">Men's wear ></a>
+                                <a class="text-dark opacity-50" href="#">Summer clothing</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="src-view-dt w-75 d-flex justify-content-between align-items-center bg-white p-2">
+                            <p><span id="totalItm"></span> items in <span class="fw-bold"> Mobile accessory</span>
+                            </p>
+                            <div class="deatils d-flex align-items-center gap-3">
+                                <input class="inpview" type="checkbox">
+                                <p>Verified only</p>
+                                <select>
+                                    <option>Featured</option>
+                                    <option>option</option>
+                                    <option>More...</option>
+                                </select>
+                                <img class="btnimg" src="../logo/app/btn-group.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="product-view">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white p-3">
+        <div class="container justify-content-center d-flex my-5">
+            <div class=" deals-offer-container d-flex justify-content-around">
+                <div class="logo-content w-25 d-flex flex-column">
+                    <div class="logo">
+                        <img src="../logo/logo-colored.jpg" alt="logo">
+                    </div>
+                    <p>Best information about the company gies here but now lorem ipsum is</p>
+                    <div class="icons-share d-flex gap-3">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="iyt fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">About</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">About Us</a></li>
+                            <li><a class="footMenu" href="#">Find store</a></li>
+                            <li><a class="footMenu" href="#">Categories</a></li>
+                            <li><a class="footMenu" href="#">Blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">Partnership</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">About Us</a></li>
+                            <li><a class="footMenu" href="#">Find store</a></li>
+                            <li><a class="footMenu" href="#">Categories</a></li>
+                            <li><a class="footMenu" href="#">Blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">Information</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">Help Center</a></li>
+                            <li><a class="footMenu" href="#">Money Refund</a></li>
+                            <li><a class="footMenu" href="#">Shipping</a></li>
+                            <li><a class="footMenu" href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">For users</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">Login </a></li>
+                            <li><a class="footMenu" href="#">Register</a></li>
+                            <li><a class="footMenu" href="#">Settings</a></li>
+                            <li><a class="footMenu" href="#">My Orders</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="getApp d-flex flex-column justify-content-center align-items-center gap-2">
+                    <p class="fm-head">Get app</p>
+                    <div class="app-logo d-flex flex-column gap-2">
+                        <img src="../logo/app/Group.png" alt="">
+                        <img src="../logo/app/market-button.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end d-flex justify-content-center align-items-center">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <div class="language-vers d-flex justify-content-between">
+                        <p>© 2023 Ecommerce. </p>
+                        <div class="flagiconSymbol">
+                            <img src="../logo/flags/f3.icon.png" alt="">
+                            <select id="flgs" name="flags">
+                                <option>English</option>
+                                <option>Azerbaijan</option>
+                                <option>Turkish</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- <script src="../JS/main.js"></script> -->
+    <script src="../JS/srcHome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

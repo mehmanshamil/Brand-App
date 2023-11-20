@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/wishlist.css">
+</head>
+
+<body>
+    <header>
+        <div class="container  d-flex align-items-center srcHeader justify-content-between">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../logo/logo-colored.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="search d-flex gap-4">
+
+                <div class="more-info d-flex gap-3 align-items-center m-1 mt-3 opacity-50">
+                    <div class="user text-center">
+                        <a class="text-more" href="#">
+                            <i class="iconMoreDetail fa-solid fa-user"></i>
+                            <p>User</p>
+                        </a>
+                    </div>
+                    <div class="comment text-center">
+                        <a class="text-more" href="#">
+                            <i class="iconMoreDetail fa-solid fa-comment-dots"></i>
+                            <p>Comment</p>
+                        </a>
+                    </div>
+                    <div class="orders text-center">
+                        <a class="text-more" href="./favoritePage.html">
+                            <i class="iconMoreDetail fa-solid fa-heart"></i>
+                            <p>Orders</p>
+                        </a>
+                    </div>
+                    <div class="my-cart text-center">
+                        <a class="text-more" href="./wishList.html">
+                            <i class="iconMoreDetail fa-solid fa-cart-shopping"></i>
+                            <p>My Cart</p>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section id="productList">
+
+            <div class="container justify-content-center d-flex my-5 p-3">
+                <div class=" deals-offer-container d-flex flex-column ">
+                    <p class="h5">My cart ( <span id="totalNum">0</span> )</p>
+                    <div class="d-flex gap-4">
+                        <div class="d-flex flex-column">
+
+                            <div id="productlists">
+
+                            </div>
+                            <div class="w-100 d-flex z-index btnss bg-white justify-content-between p-2">
+                                <button id="bck">
+                                    <i class="arrw fa-solid fa-arrow-left"></i>
+                                    Back to shop
+                                </button>
+                                <button id="rmv">Remove all</button>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div class="haveCoupon">
+                                <input type="text" placeholder="Add coupon">
+                                <button id="app">Apply</button>
+                            </div>
+                            <div class="resulttable">
+                                <div class="tablohead  d-flex flex-column gap-2">
+                                    <div class="tablo">
+                                        <p class="opacity-50">Subtotal:</p>
+                                        <p class="opacity-50">$1403.97</p>
+                                    </div>
+                                    <div class="tablo">
+                                        <p class="opacity-50">Discount</p>
+                                        <p style="color: red;">-$60.00</p>
+                                    </div>
+                                    <div class="tablo">
+                                        <p class="opacity-50">Tax :</p>
+                                        <p style="color: green;">+$14.00</p>
+                                    </div>
+                                </div>
+                                <div class="price-view ">
+                                    <p class="fw-bold">Total</p>
+                                    <p id="priceView" class="fw-bold">$1357.97</p>
+                                </div>
+                                <button class="chckBtn">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex gap-5">
+                    <div class="packet d-flex gap-2 justify-content-center">
+                        <div class="imgpckt d-flex align-items-center">
+                            <img src="../logo/icon-cart/1🔹Icon Color.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                            <p>Secure payment</p>
+                            <p class="opacity-50">Have you ever finally just </p>
+
+                        </div>
+                    </div>
+                    <div class="packet d-flex gap-2 justify-content-center">
+                        <div class="imgpckt d-flex align-items-center">
+                            <img src="../logo/icon-cart/2🔹Icon Color.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                            <p>Customer support</p>
+                            <p class="opacity-50">Have you ever finally just </p>
+
+                        </div>
+                    </div>
+                    <div class="packet d-flex gap-2 justify-content-center">
+                        <div class="imgpckt d-flex align-items-center">
+                            <img src="../logo/icon-cart/3.🔹 Icon Color.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                            <p>Free delivery</p>
+                            <p class="opacity-50">Have you ever finally just </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recommend">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <p class="recom-txt">Saved for later</p>
+                    <div id="produtc"></div>
+                    <div class="d-flex justify-content-end">
+                        <button class="my-4" id="lmBtn">
+                            <i class="arrowIcon fa-solid fa-arrow-up"></i>
+                            Load more...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="discount">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <div class="discount-more">
+                        <div class="d-flex flex-column">
+                            <p>Super discount on more than 100 USD</p>
+                            <p class="opacity-50">Have you ever finally just write dummy info</p>
+                        </div>
+                        <button class="shp">Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white p-3">
+        <div class="container justify-content-center d-flex my-5">
+            <div class=" deals-offer-container d-flex justify-content-around w-100">
+                <div class="logo-content w-25 d-flex flex-column">
+                    <div class="logo">
+                        <img src="../logo/logo-colored.jpg" alt="logo">
+                    </div>
+                    <p>Best information about the company gies here but now lorem ipsum is</p>
+                    <div class="icons-share d-flex gap-3">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="iyt fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">About</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">About Us</a></li>
+                            <li><a class="footMenu" href="#">Find store</a></li>
+                            <li><a class="footMenu" href="#">Categories</a></li>
+                            <li><a class="footMenu" href="#">Blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">Partnership</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">About Us</a></li>
+                            <li><a class="footMenu" href="#">Find store</a></li>
+                            <li><a class="footMenu" href="#">Categories</a></li>
+                            <li><a class="footMenu" href="#">Blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">Information</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">Help Center</a></li>
+                            <li><a class="footMenu" href="#">Money Refund</a></li>
+                            <li><a class="footMenu" href="#">Shipping</a></li>
+                            <li><a class="footMenu" href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="about">
+                    <nav class="d-flex justify-content-center flex-column align-items-center">
+                        <p class="fm-head">For users</p>
+                        <ul class=" d-flex flex-column justify-content-center align-items-center">
+                            <li><a class="footMenu" href="#">Login </a></li>
+                            <li><a class="footMenu" href="#">Register</a></li>
+                            <li><a class="footMenu" href="#">Settings</a></li>
+                            <li><a class="footMenu" href="#">My Orders</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="getApp d-flex flex-column justify-content-center align-items-center gap-2">
+                    <p class="fm-head">Get app</p>
+                    <div class="app-logo d-flex flex-column gap-2">
+                        <img src="../logo/app/Group.png" alt="">
+                        <img src="../logo/app/market-button.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end d-flex justify-content-center align-items-center">
+            <div class="container justify-content-center d-flex my-5">
+                <div class=" deals-offer-container d-flex flex-column">
+                    <div class="language-vers d-flex justify-content-between">
+                        <p>© 2023 Ecommerce. </p>
+                        <div class="flagiconSymbol">
+                            <img src="../logo/flags/f3.icon.png" alt="">
+                            <select id="flgs" name="flags">
+                                <option>English</option>
+                                <option>Azerbaijan</option>
+                                <option>Turkish</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../JS/wislist.js"></script>
+    <!-- <script src="../JS/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

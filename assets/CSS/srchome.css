@@ -1,0 +1,105 @@
+.btnimg {
+    cursor: pointer;
+}
+
+.inpview {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.deatils p {
+    padding: 0;
+    margin: 0;
+}
+
+.src-view-dt {
+    border-radius: 8px;
+}
+
+.product {
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: 8px;
+    gap: 2rem;
+    position: relative;
+}
+
+.product img {
+    border-radius: 8px;
+    width: 237px;
+    height: 184px;
+}
+
+.old-price {
+    opacity: 0.7;
+    margin-left: 2rem;
+    text-decoration: line-through !important;
+    font-weight: bold;
+
+}
+.newPrice{
+    font-weight: 600;
+    font-size: 20px;
+}
+.detail-info{
+    display: flex;
+    gap: 45px;
+    margin-left: 1.5rem;
+}
+.detail-info p{
+    position: relative;
+}
+.detail-info p::after{
+    content: "";
+    width: 7.7px;
+    height: 6px;
+    background-color: #DEE2E7;
+    position: absolute;
+    border-radius: 50%;
+    left: -15px;
+    top: 10px;
+}
+.freeshop{
+    color: #00B517
+    ;
+}
+.content-detail{
+    display: flex;
+}
+.itemTitle{
+    font-weight: 500;
+}
+.icons i{
+height: 15px;
+width: 20.54px;
+}
+.active-star{
+    color: #FF9017;
+}
+.pro-fav {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    transition: 1s;
+    border: 1px solid #DEE2E7
+    ;
+    padding: 10px;
+}
+
+.pro-fav:hover {
+    color: red;
+}
+.pro-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
